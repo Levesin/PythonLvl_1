@@ -5,6 +5,7 @@ while True:
     if not age.isdigit() or 0 >= int(age):
         print("Ошибка, повторите ввод")
         continue
+    print(age)
 
     if 0 < int(age) < 10:
       print("Привет, Шкет", name)

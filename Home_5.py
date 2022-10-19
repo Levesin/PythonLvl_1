@@ -8,24 +8,39 @@ while True:
     num = input("Введите число: ")
     if not num.isdigit() or int(num) == 0:
         print("Ошибка, повторите ввод")
-
-    continue
-
-
-
+        continue
+# While
     num = int(num)
-
-
-    while shag <= num:
-        shag = + 1
-        if shag % 3 == 0:
+    i = 0
+    sum = 0
+    while i < num:
+        i += 1
+        if i % 3 == 0:
             continue
-    else:
+        else:
+            sum += i**3
+        print(sum)
 
-     a = shag ** 3
-     suma = a + suma
+    print("-"*50)
 
-     print(suma)
-     break
+# For
+
+    sum = 0
+    for num in range(num):
+        if num % 3 == 0:
+            continue
+        sum += num ** 3
+        print(sum)
+
+# Exit
+    pakeda = input("Хотите выйти? (Y/Д) ")
+    if pakeda.upper() in ('Y', 'Д'):
+        break
+
+
+
+
+
+
 
 
