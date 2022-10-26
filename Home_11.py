@@ -2,8 +2,8 @@
 # которые являются полиндромами (читаются одинаково в обе стороны),
 # регистр букв не учитывать.
 
-list_1 = ["радар", "лицо" , "шалаш", "перец"]
-print(list_1)
+inputdata = ['Страна', 'шалаш', 'Летел', 'вертолёт', 'УЧУ', 'мэм', 'язык']
+print(inputdata)
 
-list_polin = filter(lambda s: s == s[::-1], list_1)
+list_polin = filter(lambda s: s == s[::-1], inputdata)
 print(list(list_polin))
