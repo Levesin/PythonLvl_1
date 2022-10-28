@@ -4,10 +4,7 @@
 # передаются в новый список без изменения их типа.
 # В качестве функции в map использовать lambda
 
-list_1 = [1, "Yes", 2, "No"]
+list_1 = [1, 2, '3', 'forth', 'end', 99, True, None]
 
-#new_listr = map(lambda x: str(x) , list_1)
-#print(list(new_listr))
-
-new_list = map(lambda x: x.remove(x) if x == 1 else x, list_1)
-print(list(new_list))
+new_listr = map(lambda x: str(x) if type(x) == int else x, list_1)
+print(list(new_listr))
