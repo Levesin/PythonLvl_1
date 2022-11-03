@@ -3,7 +3,6 @@
 # Исключения составляют все числа кратные цифре 3.
 # Реализовать в 2-х вариантах: используя цикл while и цикл for
 
-
 while True:
     num = input("Введите число: ")
     if not num.isdigit() or int(num) == 0:
@@ -36,7 +35,6 @@ while True:
     pakeda = input("Хотите выйти? (Y/Д) ")
     if pakeda.upper() in ('Y', 'Д'):
         break
-
 
 
 
