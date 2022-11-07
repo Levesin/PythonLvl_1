@@ -18,17 +18,16 @@ print(rows)
 print("-"*50)
 
 First_Name = '''
-SELECT id, info, COUNT(*) as count 
-    FROM customers
-    GROUP BY FirstName
-    HAVING count(*) > 2
-           and count(*) < 5
-ORDER BY count DESC;
+
+SELECT [FirstName], COUNT(FirstName) as 'Количество'
+FROM [customers]
+GROUP BY [FirstName]
+
       
 
 '''
 rows = cur.execute(First_Name).fetchall()
-print(First_Name)
+print(rows)
 
 connection.close()
 
