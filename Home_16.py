@@ -5,11 +5,11 @@
 
 import json
 
-umba_tumba = [{111111: ("Bob", 30),
+umba_tumba = {111111: ("Bob", 30),
           222222: ("Kelvin", 10),
           333333: ("Mark", 27),
           444444: ("Roman", 22),
           555555: ("Ilusha", 20),
-          666666: ("Yarik", 19)}]
+          666666: ("Yarik", 19)}
 with open("umba_tumba.json", 'w') as f:
     json.dump(umba_tumba, f)
