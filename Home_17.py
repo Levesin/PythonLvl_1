@@ -6,24 +6,25 @@
 import json
 import csv
 from pprint import pprint
-import pandas as pd
+
 
 
 
 with open("umba_tumba.json", "r", encoding="utf-8") as f:
     chitaem = json.load(f)
     pprint(chitaem)
-
-
+zaglav = ["id",'Имя','Возраст','Телефон']
 with open("umba_tumba.csv", "w", encoding="utf-8") as f:
     file_csv = csv.writer(f)
-    file_csv.writerow(['Имя','Возраст','Телефон'])
+
+    file_csv.writerow(zaglav)
     file_csv.writerow(chitaem['111111'])
     file_csv.writerow(chitaem['222222'])
     file_csv.writerow(chitaem['333333'])
     file_csv.writerow(chitaem['444444'])
     file_csv.writerow(chitaem['555555'])
     file_csv.writerow(chitaem['666666'])
+
 
 
 
