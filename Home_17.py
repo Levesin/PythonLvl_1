@@ -16,14 +16,13 @@ with open("umba_tumba.json", "r", encoding="utf-8") as f:
 zaglav = ['Имя','Возраст','Телефон']
 with open("umba_tumba.csv", "w", encoding="utf-8") as f:
     file_csv = csv.writer(f)
-
     file_csv.writerow(zaglav)
-    file_csv.writerow(chitaem['111111'])
-    file_csv.writerow(chitaem['222222'])
-    file_csv.writerow(chitaem['333333'])
-    file_csv.writerow(chitaem['444444'])
-    file_csv.writerow(chitaem['555555'])
-    file_csv.writerow(chitaem['666666'])
+    number = 38099000
+    for key in chitaem:
+      file_csv.writerow(chitaem[key]+[number])
+      number = number + 53
+
+
 
 
 
