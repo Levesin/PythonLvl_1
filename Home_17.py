@@ -13,7 +13,7 @@ from pprint import pprint
 with open("umba_tumba.json", "r", encoding="utf-8") as f:
     chitaem = json.load(f)
     pprint(chitaem)
-zaglav = ['Имя','Возраст','Телефон']
+zaglav = ['Имя', 'Возраст', 'Телефон']
 with open("umba_tumba.csv", "w", encoding="utf-8") as f:
     file_csv = csv.writer(f)
     file_csv.writerow(zaglav)

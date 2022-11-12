@@ -12,6 +12,12 @@ class auto:
     makr = "Сrossover"
     weight = 1800
 
+    def __init__(self, age, brand, mark):
+        self.age = age
+        self.brand = brand
+        self.makr = mark
+
+
     def move(self):
         print("move")
 
@@ -24,7 +30,7 @@ class auto:
 
 
 
-call_auto = auto()
+call_auto = auto(8,"Mazda","coupe")
 
 call_auto.move()
 call_auto.stop()
