@@ -12,10 +12,12 @@ class auto:
     makr = "Сrossover"
     weight = 1800
 
-    def __init__(self, age, brand, mark):
+    def __init__(self, age, brand, mark, color="Blue", weight=1800):
         self.age = age
         self.brand = brand
         self.makr = mark
+        self.color = "Blue"
+        self.weight = "1800"
 
 
     def move(self):
