@@ -21,9 +21,8 @@ with open("umba_tumba.csv", 'r', encoding="utf-8") as f:
             cell.value = value
     wb.save("umba_tumba.xlsx")
 
-import pandas as pd
+
 wb = openpyxl.load_workbook("umba_tumba.xlsx")
-wb = wb.active
-wb_df = pd.DataFrame(wb)
-wb_df = wb_df.drop(columns=["Возраст"])
+wb_1 = wb.active
+wb_1.delete_cols(2)
 wb.save("umba_tumba.xlsx")
